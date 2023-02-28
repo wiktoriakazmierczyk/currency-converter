@@ -1,0 +1,56 @@
+.container {
+    padding-top: 30px;
+}
+
+.form__fieldset {
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    box-shadow: 0px 3px 3px 0px #bbb;
+}
+
+.form__legend {
+    background-color: #0f6363;
+    color: #e6e6e6;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-align: center;
+    box-shadow: 0px 3px 3px 0px #bbb;
+}
+
+.form__label {
+    width: 120px;
+    display: inline-block;
+    margin-left: 50px;
+    padding: 10px;
+}
+
+.form__field {
+    width: 250px;
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 12px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    box-shadow: 0px 3px 3px 0px #bbb;
+}
+
+.form__field--select:hover {
+    background-color: #ccc;
+}
+
+.form__field--select {
+    width: 250px;
+    display: inline-block;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    box-shadow: 0px 3px 3px 0px #bbb;
+}
+
+.form__field--special {
+    background-color: #ccc;
+}
