@@ -1,128 +1,119 @@
-let formElement = document.querySelector(".js-form");
-let currencyElement = document.querySelector(".js-currency");
-let amountElement = document.querySelector(".js-amount");
-let exchangeElement = document.querySelector(".js-exchange");
-let resultElement = document.querySelector(".js-result");
-
-let rateEUR = 4.73;
-let ratePLN = 1.00;
-let rateGBP = 5.37;
-let rateCHF = 4.78;
-let rateUSD = 4.46;
-
-formElement.addEventListener("input", () => {
-    let currency = currencyElement.value;
-    let amount = amountElement.value;
-    let exchange = exchangeElement.value;
-    let result = resultElement.value;
-
-switch (true) {
-
-    case currency === "EUR" && exchange === "EUR":
-        result = amount / rateEUR * rateEUR;
-        break;
-
-    case currency === "EUR" && exchange === "PLN":
-        result = amount / ratePLN * rateEUR;
-        break;
-
-    case currency === "EUR" && exchange === "GBP":
-        result = amount / rateGBP * rateEUR;
-        break;
-
-    case currency === "EUR" && exchange === "CHF":
-        result = amount / rateCHF * rateEUR;
-        break;
-
-    case currency === "EUR" && exchange === "USD":
-        result = amount / rateUSD * rateEUR;
-        break;
+{
+    const calculateResult = (currency, amount, exchange) => {
+       
+        const rateEUR = 4.73;
+        const ratePLN = 1.00;
+        const rateGBP = 5.37;
+        const rateCHF = 4.78;
+        const rateUSD = 4.46;
 
 
-    case currency === "PLN" && exchange === "EUR":
-        result = amount / rateEUR * ratePLN;
-        break;
+        switch (true) {
 
-    case currency === "PLN" && exchange === "PLN":
-        result = amount / ratePLN * ratePLN;
-        break;
+            case currency === "EUR" && exchange === "EUR":
+                return amount / rateEUR * rateEUR;
 
-    case currency === "PLN" && exchange === "GBP":
-        result = amount / rateGBP * ratePLN;
-        break;
+            case currency === "EUR" && exchange === "PLN":
+                return amount / ratePLN * rateEUR;
 
-    case currency === "PLN" && exchange === "CHF":
-        result = amount / rateCHF * ratePLN;
-        break;
+            case currency === "EUR" && exchange === "GBP":
+                return amount / rateGBP * rateEUR;
 
-    case currency === "PLN" && exchange === "USD":
-        result = amount / rateUSD * ratePLN;
-        break;
+            case currency === "EUR" && exchange === "CHF":
+                return amount / rateCHF * rateEUR;
+
+            case currency === "EUR" && exchange === "USD":
+                return amount / rateUSD * rateEUR;
 
 
-    case currency === "GBP" && exchange === "EUR":
-        result = amount / rateEUR * rateGBP;
-        break;
+            case currency === "PLN" && exchange === "EUR":
+                return amount / rateEUR * ratePLN;
 
-    case currency === "GBP" && exchange === "PLN":
-        result = amount / ratePLN * rateGBP;
-        break;
+            case currency === "PLN" && exchange === "PLN":
+                return amount / ratePLN * ratePLN;
 
-    case currency === "GBP" && exchange === "GBP":
-        result = amount / rateGBP * rateGBP;
-        break;
+            case currency === "PLN" && exchange === "GBP":
+                return amount / rateGBP * ratePLN;
 
-    case currency === "GBP" && exchange === "CHF":
-        result = amount / rateCHF * rateGBP;
-        break;
+            case currency === "PLN" && exchange === "CHF":
+                return amount / rateCHF * ratePLN;
 
-    case currency === "GBP" && exchange === "USD":
-        result = amount / rateUSD * rateGBP;
-        break;
+            case currency === "PLN" && exchange === "USD":
+                return amount / rateUSD * ratePLN;
 
 
-    case currency === "CHF" && exchange === "EUR":
-        result = amount / rateEUR * rateCHF;
-        break;
 
-    case currency === "CHF" && exchange === "PLN":
-        result = amount / ratePLN * rateCHF;
-        break;
+            case currency === "GBP" && exchange === "EUR":
+                return amount / rateEUR * rateGBP;
 
-    case currency === "CHF" && exchange === "GBP":
-        result = amount / rateGBP * rateCHF;
-        break;
+            case currency === "GBP" && exchange === "PLN":
+                return amount / ratePLN * rateGBP;
 
-    case currency === "CHF" && exchange === "CHF":
-        result = amount / rateCHF * rateCHF;
-        break;
+            case currency === "GBP" && exchange === "GBP":
+                return amount / rateGBP * rateGBP;
 
-    case currency === "CHF" && exchange === "USD":
-        result = amount / rateUSD * rateCHF;
-        break;
+            case currency === "GBP" && exchange === "CHF":
+                return amount / rateCHF * rateGBP;
+
+            case currency === "GBP" && exchange === "USD":
+                return amount / rateUSD * rateGBP;
 
 
-    case currency === "USD" && exchange === "EUR":
-        result = amount / rateEUR * rateUSD;
-        break;
+            case currency === "CHF" && exchange === "EUR":
+                return amount / rateEUR * rateCHF;
 
-    case currency === "USD" && exchange === "PLN":
-        result = amount / ratePLN * rateUSD;
-        break;
+            case currency === "CHF" && exchange === "PLN":
+                return amount / ratePLN * rateCHF;
 
-    case currency === "USD" && exchange === "GBP":
-        result = amount / rateGBP * rateUSD;
-        break;
+            case currency === "CHF" && exchange === "GBP":
+                return amount / rateGBP * rateCHF;
 
-    case currency === "USD" && exchange === "CHF":
-        result = amount / rateCHF * rateUSD;
-        break;
+            case currency === "CHF" && exchange === "CHF":
+                return amount / rateCHF * rateCHF;
 
-    case currency === "USD" && exchange === "USD":
-        result = amount / rateUSD * rateUSD;
-        break;
+            case currency === "CHF" && exchange === "USD":
+                return amount / rateUSD * rateCHF;
+
+
+            case currency === "USD" && exchange === "EUR":
+                return amount / rateEUR * rateUSD;
+
+            case currency === "USD" && exchange === "PLN":
+                return amount / ratePLN * rateUSD;
+
+            case currency === "USD" && exchange === "GBP":
+                return amount / rateGBP * rateUSD;
+
+            case currency === "USD" && exchange === "CHF":
+                return amount / rateCHF * rateUSD;
+
+            case currency === "USD" && exchange === "USD":
+                return amount / rateUSD * rateUSD;
+        }
+    }
+
+    const updateResult = (result, exchange) => {
+        const resultElement = document.querySelector(".js-result");
+        resultElement.value = `${result.toFixed(2)} ${exchange}`;
+    }
+
+    const init = () => {
+        const formElement = document.querySelector(".js-form");
+        formElement.addEventListener("input", () => {
+
+            const currencyElement = document.querySelector(".js-currency");
+            const amountElement = document.querySelector(".js-amount");
+            const exchangeElement = document.querySelector(".js-exchange");
+
+            const currency = currencyElement.value;
+            const amount = amountElement.value;
+            const exchange = exchangeElement.value;
+
+            let result = calculateResult(currency, amount, exchange);
+
+            updateResult(result, exchange)
+        });
+    }
+
+    init();
 }
-
-resultElement.value = `${result.toFixed(2)} ${exchange}`;
-
-});
