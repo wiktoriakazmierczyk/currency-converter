@@ -1,5 +1,4 @@
 .container {
-    padding-top: 30px;
     flex-basis: 900px;
 }
 
@@ -11,7 +10,7 @@
 }
 
 .form__legend {
-    background-color: #036033;
+    background-color: #0f6346;
     color: #e6e6e6;
     border-radius: 5px;
     padding: 10px 20px;
