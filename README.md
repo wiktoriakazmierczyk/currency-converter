@@ -1,4 +1,4 @@
-## Currency converter
+# Currency converter
 
 ![Currency converter sample](https://i.postimg.cc/g2bPpyyH/animation.gif)
 
