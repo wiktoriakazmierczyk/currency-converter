@@ -1,8 +1,8 @@
 {
     const calculateResult = (currency, amount, exchange) => {
        
-        const rateEUR = 4.73;
         const ratePLN = 1.00;
+        const rateEUR = 4.73;
         const rateGBP = 5.37;
         const rateCHF = 4.78;
         const rateUSD = 4.46;
