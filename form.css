@@ -4,7 +4,7 @@
 
 .form__fieldset {
     background-color: #555555c5;
-    border: 1px solid #555555c5;
+    border: none;
     border-radius: 5px;
     box-shadow: 0px 3px 3px 0px #444;
 }
@@ -12,6 +12,7 @@
 .form__legend {
     background-color: #0f6346;
     color: #e6e6e6;
+    border: none;
     border-radius: 5px;
     padding: 10px 20px;
     text-align: center;
@@ -33,13 +34,9 @@
     margin-top: 10px;
     margin-bottom: 10px;
     padding: 12px;
-    border: 1px solid #bbb;
+    border: none;
     border-radius: 5px;
     box-shadow: 0px 3px 3px 0px #444;
-}
-
-.form__field--select:hover {
-    background-color: #ccc;
 }
 
 .form__field--select {
@@ -48,9 +45,13 @@
     margin-left: 10px;
     margin-bottom: 10px;
     padding: 10px;
-    border: 1px solid #bbb;
+    border: none;
     border-radius: 5px;
     box-shadow: 0px 3px 3px 0px #444;
+}
+
+.form__field--select:hover {
+    background-color: #ccc;
 }
 
 .form__field--special {
